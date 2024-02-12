@@ -7,6 +7,7 @@ make list
 and run the demo
 ```
 ./demo
+Get 99th element
 list[99] = 99
 cpu time = 0.0001 sec
 0 1 2 3 4 5 6 7 ... 5 96 97 98 99
