@@ -19,7 +19,6 @@ List *createList() {
     list->head = NULL;
     list->tail = NULL;
     list->length = 0;
-
     return list;
 }
 
@@ -27,14 +26,12 @@ void append(List *list, int num) {
     Node *new_node = (Node *)malloc(sizeof(Node));
     new_node->data = num;
     new_node->next = NULL;
-
     if (list->length == 0) {
         list->head = new_node;
         list->tail = new_node;
         list->length++;
         return;
     }
-
     Node *last_node = list->tail;
     if (last_node->next == NULL) {
         last_node->next = new_node;
