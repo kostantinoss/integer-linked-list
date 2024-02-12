@@ -18,6 +18,8 @@ int main() {
     }
     
     start = clock();
+    
+    printf("Test get(): Get %th element\n", limit - 1)
     printf("list[%d] = %d\n", limit - 1, get(list, limit - 1));
     
     stop = clock();
