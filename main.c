@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include "list.h"
 
 
 int main() {
@@ -10,7 +11,7 @@ int main() {
     List *list;
     list = createList();
     
-    int limit = 100000000;
+    int limit = 100;
     
     for (int i = 0; i < limit; i++) {
         append(list, i);   
@@ -23,7 +24,7 @@ int main() {
     
     cpu_time = ((double)(stop - start))/CLOCKS_PER_SEC;
     printf("cpu time = %.4f sec\n", cpu_time);
-    // printList();
+    printList(list);
     
     return 0;
 }
